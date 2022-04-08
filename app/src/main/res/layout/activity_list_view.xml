@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/ivAvatar"
+        android:src="@drawable/wallpaper"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivAvatar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCode"
+        android:layout_below="@+id/tvName"
+        android:layout_marginTop="5dp"
+        android:text="0983020816"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivAvatar"
+        />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/tvCode"
+        android:layout_marginLeft="221dp"
+        android:backgroundTint="@color/red"
+        android:text="Delete"
+        android:textSize="6.5dp" />
+</RelativeLayout>
